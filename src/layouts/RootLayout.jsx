@@ -1,8 +1,10 @@
-import { Container, Grid, GridItem, Box, HStack, Spacer, Text } from "@chakra-ui/react"
+import { Container, Grid, GridItem, Box, HStack, Spacer, Text, List, ListItem } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Section from "../components/Section"
+import { ExternalLink } from 'react-external-link'
+import { FaFacebookF, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa";
 
 {/* BUILDING THE CHAKRA GRID (12 cols layout) BELOW */ }
 
@@ -24,9 +26,47 @@ export default function RootLayout()
               <Box width={{ base: '25%', md: '35%', lg: '30%', xl: '15%' }}>
                 <Section /> {/* Section CUSTOM component */}
               </Box>
+
               <Spacer />
-              <Box width={{ base: '70%', md: '80%', lg: '90%', xl: '85%' }}>
-                <Text display="flex" justifyContent="flex-end">social media icons go here</Text>
+
+              <Box
+                border="3px solid red"
+                width={{ base: '60%', md: '50%', lg: '60%', xl: '75%' }}
+                display="flex"
+                flexDirection="row"
+                justifyContent="flex-end"
+              >
+
+                <List display="flex" flexDirection="row">
+
+                  <ExternalLink href="https://www.facebook.com/YamahaMotorPortugal/" target="_blank">
+                    <ListItem marginRight="20px" >
+                      <FaFacebookF />
+                    </ListItem>
+                  </ExternalLink>
+
+                  <ExternalLink href="https://twitter.com/YamahaMotorEU" target="_blank">
+                    <ListItem marginRight="20px">
+                      <FaTwitter />
+                    </ListItem>
+                  </ExternalLink>
+
+                  <ExternalLink href="https://www.linkedin.com/company/yamaha-corporation" target="_blank">
+                    <ListItem marginRight="20px">
+                      <FaLinkedin />
+                    </ListItem>
+                  </ExternalLink>
+
+                  <ExternalLink href="https://www.pinterest.com/MaxeysOKC/yamaha/" target="_blank">
+                    <ListItem marginRight="20px">
+                      <FaPinterest />
+                    </ListItem>
+                  </ExternalLink>
+
+
+
+                </List>
+
               </Box>
             </HStack>
 
