@@ -1,6 +1,15 @@
+import { Box, Image } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
+
 export default function Section()
 {
     return (
-        <div>My section component: includes logo to left and social media icons to right</div>
+        <>
+            <Box boxSize='sm'>
+                <Link to="/">
+                    <Image src='../../public/img/yamaha-logotype.png' alt='Yamaha Logotype' />
+                </Link>
+            </Box>
+        </>
     )
 }

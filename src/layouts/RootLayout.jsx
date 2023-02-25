@@ -1,6 +1,7 @@
 import { Container, Grid, GridItem, Box } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
+import Navbar from "../components/Navbar"
 import Section from "../components/Section"
 
 {/* BUILDING THE CHAKRA GRID (12 cols layout) BELOW */ }
@@ -35,7 +36,7 @@ export default function RootLayout()
           >
 
             <Box border="3px solid red">
-              navbar:  includes nav-links to all the 4 pages (home, profile, test drive, contact)
+              <Navbar /> {/* Navbar CUSTOM component */}
             </Box>
 
           </GridItem> {/* NAVBAR GRID ITEM / */}
@@ -52,7 +53,7 @@ export default function RootLayout()
               <span>(Outlet component display the page name)</span>
               <br />
               <br />
-              Page: <Outlet />
+              <Outlet />
             </Box>
 
           </GridItem> {/* MAIN CONTENT GRID ITEM: PAGES / */}
