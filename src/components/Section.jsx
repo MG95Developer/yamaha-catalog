@@ -5,11 +5,9 @@ export default function Section()
 {
     return (
         <>
-            <Box boxSize='sm'>
-                <Link to="/">
-                    <Image src='../../public/img/yamaha-logotype.png' alt='Yamaha Logotype' />
-                </Link>
-            </Box>
+            <Link to="/">
+                <Image src='../../public/img/yamaha-logotype.png' alt='Yamaha Logotype' width="100%" heigth="auto" />
+            </Link>
         </>
     )
 }

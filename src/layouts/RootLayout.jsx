@@ -1,4 +1,4 @@
-import { Container, Grid, GridItem, Box } from "@chakra-ui/react"
+import { Container, Grid, GridItem, Box, HStack, Spacer, Text } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
@@ -17,13 +17,19 @@ export default function RootLayout()
             as="section"
             border="6px solid brown"
             colSpan={{ base: 12 }}
-            minHeight={{ base: '120px', md: "100px" }}
             p={{ base: '10px' }}
           >
 
-            <Box border="3px solid red">
-              <Section /> {/* Section CUSTOM component */}
-            </Box>
+            <HStack>
+              <Box width={{ base: '25%', md: '35%', lg: '30%', xl: '15%' }}>
+                <Section /> {/* Section CUSTOM component */}
+              </Box>
+              <Spacer />
+              <Box width={{ base: '70%', md: '80%', lg: '90%', xl: '85%' }}>
+                <Text display="flex" justifyContent="flex-end">social media icons go here</Text>
+              </Box>
+            </HStack>
+
 
           </GridItem> {/* TOP SECTION GRID ITEM / */}
 
