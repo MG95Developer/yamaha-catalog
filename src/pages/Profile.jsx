@@ -1,6 +1,6 @@
 export default function Profile()
 {
     return (
-        <div>Profile</div>
+        <div>Your Profile</div>
     )
 }

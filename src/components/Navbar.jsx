@@ -1,4 +1,5 @@
-import { Box, Link, Text, Image } from "@chakra-ui/react";
+import { Box, List, ListItem } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 
 export default function Navbar()
@@ -8,26 +9,35 @@ export default function Navbar()
             <Box
                 as="nav"
                 p={4}
-                display='flex'
-                flexDirection={{ base: 'row', md: 'column' }}
+
             >
+                <List display='flex'
+                    flexDirection={{ base: 'row', md: 'column' }}
+                >
+                    <ListItem mr={{ base: '10px', md: '0px' }}>
+                        <NavLink to="/" >
+                            Home
+                        </NavLink>
+                    </ListItem>
 
-                <Box mr={{ base: '15px', md: '0px' }}>
-                    link 1
-                </Box>
+                    <ListItem mr={{ base: '10px', md: '0px' }}>
+                        <NavLink to="/test-drive" >
+                            Drive
+                        </NavLink>
+                    </ListItem>
 
-                <Box mr={{ base: '15px', md: '0px' }}>
-                    link 2
-                </Box>
+                    <ListItem mr={{ base: '10px', md: '0px' }}>
+                        <NavLink to="/profile">
+                            Profile
+                        </NavLink>
+                    </ListItem>
 
-                <Box mr={{ base: '15px', md: '0px' }}>
-                    link 3
-                </Box>
-
-                <Box mr={{ base: '15px', md: '0px' }}>
-                    link 4
-                </Box>
-
+                    <ListItem mr={{ base: '10px', md: '0px' }}>
+                        <NavLink to="/contact">
+                            Contact
+                        </NavLink>
+                    </ListItem>
+                </List>
             </Box>
         </>
     )
