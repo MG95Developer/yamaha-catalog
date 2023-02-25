@@ -9,6 +9,9 @@ import
 // layouts and pages
 import RootLayout from './layouts/RootLayout'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
+import TestDrive from './pages/TestDrive';
+import Profile from './pages/Profile'
 
 
 // router and routes
@@ -16,6 +19,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/test-drive" element={<TestDrive />} />
+      <Route path="/profile" element={<Profile />} />
     </Route>
   )
 )
