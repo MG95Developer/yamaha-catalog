@@ -4,7 +4,7 @@ export default function Home()
 {
   return (
     <>
-      <Text>Homepage</Text>
+      <Text color="yamaha.red">Homepage</Text>
     </>
 
   )
