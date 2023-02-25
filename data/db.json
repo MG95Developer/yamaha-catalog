@@ -1,0 +1,11 @@
+{
+    "motorcycles": [
+        {
+            "id": 1,
+            "title": "motorcycle 1",
+            "description": "motorcycle 1 description",
+            "price": "17.500,50",
+            "img": ""
+        }
+    ]
+}
