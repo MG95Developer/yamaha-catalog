@@ -30,46 +30,35 @@ export default function RootLayout()
               <Spacer />
 
               <Box
-                border="3px solid red"
                 width={{ base: '60%', md: '50%', lg: '60%', xl: '75%' }}
                 display="flex"
                 flexDirection="row"
                 justifyContent="flex-end"
               >
-
-                <List display="flex" flexDirection="row">
-
+                <List display="flex" flexDirection="row" fontSize={{ base: '18px', md: '22px', lg: '25px' }}>
                   <ExternalLink href="https://www.facebook.com/YamahaMotorPortugal/" target="_blank">
-                    <ListItem marginRight="20px" >
+                    <ListItem marginRight="20px" p={2} color="yamaha.red" >
                       <FaFacebookF />
                     </ListItem>
                   </ExternalLink>
-
                   <ExternalLink href="https://twitter.com/YamahaMotorEU" target="_blank">
-                    <ListItem marginRight="20px">
+                    <ListItem marginRight="20px" p={2} color="yamaha.red">
                       <FaTwitter />
                     </ListItem>
                   </ExternalLink>
-
                   <ExternalLink href="https://www.linkedin.com/company/yamaha-corporation" target="_blank">
-                    <ListItem marginRight="20px">
+                    <ListItem marginRight="20px" p={2} color="yamaha.red">
                       <FaLinkedin />
                     </ListItem>
                   </ExternalLink>
-
                   <ExternalLink href="https://www.pinterest.com/MaxeysOKC/yamaha/" target="_blank">
-                    <ListItem marginRight="20px">
+                    <ListItem marginRight="0px" p={2} color="yamaha.red">
                       <FaPinterest />
                     </ListItem>
                   </ExternalLink>
-
-
-
                 </List>
-
               </Box>
             </HStack>
-
 
           </GridItem> {/* TOP SECTION GRID ITEM / */}
 
