@@ -2,10 +2,39 @@
     "motorcycles": [
         {
             "id": 1,
-            "title": "motorcycle 1",
-            "description": "motorcycle 1 description",
-            "price": "17.500,50",
-            "img": ""
+            "title": "Yamaha R1M",
+            "model": "YZF-R1M",
+            "engine": "998cc",
+            "colors": "black and blue",
+            "year": "2023",
+            "description": "lastest R1M model",
+            "price": "$26,999",
+            "img": "./public/img/2023-YZF-R1M.png",
+            "category": "YAMAHA SUPERSPORT"
+        },
+        {
+            "id": 2,
+            "title": "Yamaha R1",
+            "model": "YZF-R1",
+            "engine": "998cc",
+            "colors": "white and red",
+            "year": "2022",
+            "description": "WORLD GP 60TH ANNIVERSARY EDITION",
+            "price": "$18,099",
+            "img": "./public/img/2022-YZF-R1-60TH-ANNIVERSARY-EDITION.png",
+            "category": "YAMAHA SUPERSPORT"
+        },
+        {
+            "id": 3,
+            "title": "Yamaha R7",
+            "model": "YZF-R7",
+            "engine": "689cc",
+            "colors": "black and blue",
+            "year": "2023",
+            "description": "lastest R7 model",
+            "price": "$9,99",
+            "img": "./public/img/2023-YZF-R7.png",
+            "category": "YAMAHA SUPERSPORT"
         }
     ]
 }
