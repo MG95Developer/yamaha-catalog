@@ -36,12 +36,12 @@ export default function RootLayout()
           <GridItem
             as="nav"
             border="6px solid purple"
-            colSpan={{ base: 12, md: 4, lg: 4, xl: 3 }}
+            colSpan={{ base: 12, md: 4, lg: 4, xl: 2 }}
             minHeight={{ base: '120px' }}
             p={{ base: '10px' }}
           >
 
-            <Box border="3px solid red">
+            <Box border="3px solid red" height="100%" display="flex" justifyContent="center" alignItems="center">
               <Navbar /> {/* Navbar CUSTOM component */}
             </Box>
 
@@ -50,15 +50,12 @@ export default function RootLayout()
           <GridItem
             as="main"
             border="6px solid green"
-            colSpan={{ base: 12, md: 8, lg: 8, xl: 9 }}
+            colSpan={{ base: 12, md: 8, lg: 8, xl: 10 }}
             minHeight={{ base: '100vh' }}
             p={{ base: '10px' }}
           >
 
-            <Box border="3px solid red">
-              <span>(Outlet component display the page name)</span>
-              <br />
-              <br />
+            <Box border="3px solid red" height="100%">
               <Outlet />
             </Box>
 
@@ -72,7 +69,7 @@ export default function RootLayout()
             p={{ base: '10px' }}
           >
 
-            <Box border="3px solid red">
+            <Box border="3px solid red" height="100%">
               <Footer /> {/* Footer CUSTOM component */}
             </Box>
 
