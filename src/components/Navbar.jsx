@@ -4,6 +4,17 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar()
 {
+
+    const navLinks = {
+        textTransform: 'uppercase',
+        fontWeight: '600',
+        borderBottom: '2px solid',
+        borderColor: 'transparent',
+        _hover: {
+            borderColor: 'yamaha.red',
+        }
+    }
+
     return (
         <>
             <Box
@@ -14,29 +25,29 @@ export default function Navbar()
                 <List display='flex'
                     flexDirection={{ base: 'row', md: 'column' }}
                 >
-                    <ListItem mr={{ base: '10px', md: '0px' }}>
-                        <NavLink to="/" >
-                            Home
-                        </NavLink>
-                    </ListItem>
+                    <NavLink to="/" >
+                        <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '1em', lg: '1.2em' }} sx={navLinks}>
+                            Products
+                        </ListItem>
+                    </NavLink>
 
-                    <ListItem mr={{ base: '10px', md: '0px' }}>
-                        <NavLink to="/test-drive" >
+                    <NavLink to="/test-drive" >
+                        <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '1em', lg: '1.2em' }} sx={navLinks}>
                             Drive
-                        </NavLink>
-                    </ListItem>
+                        </ListItem>
+                    </NavLink>
 
-                    <ListItem mr={{ base: '10px', md: '0px' }}>
-                        <NavLink to="/profile">
+                    <NavLink to="/profile">
+                        <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '1em', lg: '1.2em' }} sx={navLinks}>
                             Profile
-                        </NavLink>
-                    </ListItem>
+                        </ListItem>
+                    </NavLink>
 
-                    <ListItem mr={{ base: '10px', md: '0px' }}>
-                        <NavLink to="/contact">
+                    <NavLink to="/contact">
+                        <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '1em', lg: '1.2em' }} sx={navLinks}>
                             Contact
-                        </NavLink>
-                    </ListItem>
+                        </ListItem>
+                    </NavLink>
                 </List>
             </Box>
         </>
