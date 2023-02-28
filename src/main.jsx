@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import index from './index.css'
 
 // 1 -Install Chakra UI (npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion)
 // 2 - Import ChakraProvider
