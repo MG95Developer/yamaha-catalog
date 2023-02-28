@@ -4,8 +4,6 @@ import { FaFacebookF, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa"
 
 export default function SocialMediaIcons()
 {
-
-
     const topSocialMediaIcons = {
         marginLeft: '10px',
         padding: '15px',

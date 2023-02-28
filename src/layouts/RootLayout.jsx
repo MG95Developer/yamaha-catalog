@@ -1,17 +1,13 @@
-import { Container, Grid, GridItem, Box, HStack, Spacer, List, ListItem } from "@chakra-ui/react"
+import { Container, Grid, GridItem, Box, HStack, Spacer } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Section from "../components/Section"
-
 import SocialMediaIcons from "../components/SocialMediaIcons"
 
-{/* BUILDING THE CHAKRA GRID (12 cols layout) BELOW */ }
 
 export default function RootLayout()
 {
-
-
 
   return (
     <>
@@ -26,7 +22,7 @@ export default function RootLayout()
 
             <HStack>
               <Box width={{ base: '25%', md: '35%', lg: '30%', xl: '15%' }}>
-                <Section /> {/* Section CUSTOM component */}
+                <Section />
               </Box>
 
               <Spacer />
@@ -37,12 +33,12 @@ export default function RootLayout()
                 flexDirection="row"
                 justifyContent="flex-end"
               >
-                <SocialMediaIcons /> {/* Social Media Icons CUSTOM component */}
+                <SocialMediaIcons />
               </Box>
 
             </HStack>
 
-          </GridItem> {/* TOP SECTION GRID ITEM / */}
+          </GridItem>
 
           <GridItem
             as="nav"
@@ -53,10 +49,10 @@ export default function RootLayout()
           >
 
             <Box height="100%" display="flex" justifyContent="center" alignItems="center">
-              <Navbar /> {/* Navbar CUSTOM component */}
+              <Navbar />
             </Box>
 
-          </GridItem> {/* NAVBAR GRID ITEM / */}
+          </GridItem>
 
           <GridItem
             as="main"
@@ -69,7 +65,7 @@ export default function RootLayout()
               <Outlet />
             </Box>
 
-          </GridItem> {/* MAIN CONTENT GRID ITEM: PAGES / */}
+          </GridItem>
 
           <GridItem
             as="footer"
@@ -80,10 +76,10 @@ export default function RootLayout()
           >
 
             <Box height="100%">
-              <Footer /> {/* Footer CUSTOM component */}
+              <Footer />
             </Box>
 
-          </GridItem> {/* FOOTER GRID ITEM / */}
+          </GridItem>
 
         </Grid>
       </Container>
