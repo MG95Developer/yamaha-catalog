@@ -3,22 +3,15 @@ import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Section from "../components/Section"
-import { ExternalLink } from 'react-external-link'
-import { FaFacebookF, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa";
+
+import SocialMediaIcons from "../components/SocialMediaIcons"
 
 {/* BUILDING THE CHAKRA GRID (12 cols layout) BELOW */ }
 
 export default function RootLayout()
 {
 
-  const socialMediaIcons = {
-    marginLeft: '10px',
-    padding: '15px',
-    color: 'black',
-    _hover: {
-      color: 'yamaha.red',
-    }
-  }
+
 
   return (
     <>
@@ -44,29 +37,9 @@ export default function RootLayout()
                 flexDirection="row"
                 justifyContent="flex-end"
               >
-                <List display="flex" flexDirection="row" fontSize={{ base: '18px', md: '22px', lg: '25px' }}>
-                  <ExternalLink href="https://www.facebook.com/YamahaMotorPortugal/" target="_blank">
-                    <ListItem sx={socialMediaIcons}>
-                      <FaFacebookF />
-                    </ListItem>
-                  </ExternalLink>
-                  <ExternalLink href="https://twitter.com/YamahaMotorEU" target="_blank">
-                    <ListItem sx={socialMediaIcons}>
-                      <FaTwitter />
-                    </ListItem>
-                  </ExternalLink>
-                  <ExternalLink href="https://www.linkedin.com/company/yamaha-corporation" target="_blank">
-                    <ListItem sx={socialMediaIcons}>
-                      <FaLinkedin />
-                    </ListItem>
-                  </ExternalLink>
-                  <ExternalLink href="https://www.pinterest.com/MaxeysOKC/yamaha/" target="_blank">
-                    <ListItem sx={socialMediaIcons}>
-                      <FaPinterest />
-                    </ListItem>
-                  </ExternalLink>
-                </List>
+                <SocialMediaIcons /> {/* Social Media Icons CUSTOM component */}
               </Box>
+
             </HStack>
 
           </GridItem> {/* TOP SECTION GRID ITEM / */}
