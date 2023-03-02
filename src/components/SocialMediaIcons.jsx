@@ -7,7 +7,7 @@ export default function SocialMediaIcons()
     const topSocialMediaIcons = {
         marginLeft: '10px',
         padding: '15px',
-        color: 'black',
+        color: 'yamaha.darkGrey',
         _hover: {
             color: 'yamaha.red',
         }

@@ -11,7 +11,9 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 // extending the theme
 const colors = {
   yamaha: {
-    red: '#c80226'
+    red: '#c80226',
+    darkGrey: '#222b33',
+    lightGrey: '#67717a'
   }
 }
 

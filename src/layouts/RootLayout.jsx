@@ -42,7 +42,8 @@ export default function RootLayout()
 
           <GridItem
             as="nav"
-            bg="lightgrey"
+            bg="yamaha.lightGrey"
+            color="#fff"
             colSpan={{ base: 12, md: 4, lg: 4, xl: 2 }}
             minHeight={{ base: '120px' }}
             p={{ base: '10px' }}
@@ -69,12 +70,12 @@ export default function RootLayout()
 
           <GridItem
             as="footer"
-            bg="#222b33"
+            bg="yamaha.darkGrey"
             colSpan={{ base: 12 }}
           >
 
-            <Box >
-              <Footer border="2px solid pink" />
+            <Box py="20px">
+              <Footer />
             </Box>
 
           </GridItem>
