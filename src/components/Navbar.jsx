@@ -20,7 +20,6 @@ export default function Navbar()
             <Box
                 as="nav"
                 p={4}
-
             >
                 <List display='flex'
                     flexDirection={{ base: 'row', md: 'column' }}

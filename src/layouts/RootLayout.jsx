@@ -11,7 +11,7 @@ export default function RootLayout()
 
   return (
     <>
-      <Container maxWidth="1850px" p="0">
+      <Container maxWidth="1920px" p="0">
         <Grid templateColumns="repeat(12, 1fr)">
 
           <GridItem
@@ -69,14 +69,12 @@ export default function RootLayout()
 
           <GridItem
             as="footer"
-            bg="lightgrey"
+            bg="#222b33"
             colSpan={{ base: 12 }}
-            minHeight={{ base: '80px', md: '140px' }}
-            p={{ base: '10px' }}
           >
 
-            <Box height="100%">
-              <Footer />
+            <Box >
+              <Footer border="2px solid pink" />
             </Box>
 
           </GridItem>
