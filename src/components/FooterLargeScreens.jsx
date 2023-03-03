@@ -296,7 +296,7 @@ export default function FooterLargeScreens()
 
                     <Grid templateColumns="repeat(2, 1fr)" color="white" mt="20px" py="20px" borderTop="1px solid white">
                         <GridItem>
-                            <Grid templateColumns="repeat(4, 1fr)">
+                            <Grid templateColumns="repeat(3, 1fr)">
                                 <Box>
                                     <GridItem fontSize="13px">
                                         <Text>Privacy Policy</Text>
@@ -309,17 +309,15 @@ export default function FooterLargeScreens()
                                 </Box>
                                 <Box>
                                     <GridItem fontSize="13px">
-                                        <Text>Your Privacy Choices</Text>
-                                    </GridItem>
-                                </Box>
-                                <Box>
-                                    <GridItem fontSize="13px">
-                                        <ExternalLink href="https://yamaha-motor.com/" target="_blank">
-                                            <Text>Official Website</Text>
+                                        <ExternalLink href="https://yamaha-motor.com/data-privacy-request-form" target="_blank">
+                                            <Box display="flex" flexDirection="row">
+                                                <Text mr={2}>Your Privacy Choices </Text>
+                                                <Image src='/img/privacy-choice-icon.png' alt='privacy options icon' width="25px" heigth="auto" />
+                                            </Box>
                                         </ExternalLink>
-
                                     </GridItem>
                                 </Box>
+
                             </Grid>
 
                         </GridItem>

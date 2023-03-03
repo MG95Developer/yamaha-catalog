@@ -40,7 +40,10 @@ export default function FooterSmallScreens()
 
                 <Box sx={footerLinks}>
                     <ExternalLink href="#" target="_blank">
-                        <Text>Your Privacy Choices</Text>
+                        <Box display="flex">
+                            <Text mr={2}>Your Privacy Choices </Text>
+                            <Image src='/img/privacy-choice-icon.png' alt='privacy options icon' width="35px" heigth="auto" />
+                        </Box>
                     </ExternalLink>
                 </Box>
 
