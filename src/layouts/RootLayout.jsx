@@ -74,7 +74,7 @@ export default function RootLayout()
             colSpan={{ base: 12 }}
           >
 
-            <Box py="20px">
+            <Box>
               <Footer />
             </Box>
 

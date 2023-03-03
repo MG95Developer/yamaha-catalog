@@ -23,8 +23,8 @@ export default function FooterLargeScreens()
     }
     return (
         <>
-            <Box display={{ base: 'none', xl: 'block' }} mt="20px">
-                <Container maxWidth="1850px" px={{ lg: '10px' }} mt="20px">
+            <Box display={{ base: 'none', xl: 'block' }} mt="25px">
+                <Container maxWidth="1920px" px="15px" mt="20px">
                     <Grid templateColumns="repeat(4, 1fr)" color="white">
 
                         <GridItem
@@ -288,7 +288,6 @@ export default function FooterLargeScreens()
                             <GridItem>
                                 <Link to="/">
                                     <Image src='/img/revs-your-heart-white-logotype.svg' alt='Yamaha Logotype' width="10%" heigth="auto" />
-
                                 </Link>
                             </GridItem>
                         </Grid>
