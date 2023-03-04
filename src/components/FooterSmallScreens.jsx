@@ -18,17 +18,17 @@ export default function FooterSmallScreens()
         <>
             <Container maxWidth="1920px" px="15px" py="30px" display={{ base: 'block', xl: 'none' }}>
 
-                <Box color="white" mb="30px">
+                <Box color="white" my="30px">
                     <Link to="/">
                         <Image src='/img/revs-your-heart-white-logotype.svg' alt='Yamaha Logotype' width="130px" heigth="auto" />
                     </Link>
                 </Box>
 
-                <Box mb="30px">
+                <Box py={8}>
                     <Accordion />
                 </Box>
 
-                <Box sx={footerLinks}>
+                <Box sx={footerLinks} mt={3}>
                     <ExternalLink href="#" target="_blank">
                         <Text>Privacy Policy</Text>
                     </ExternalLink>

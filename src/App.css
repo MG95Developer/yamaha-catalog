@@ -37,6 +37,11 @@ body::-webkit-scrollbar{
     cursor: pointer;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1em 0;
+    text-transform: uppercase;
+}
+
+.title:hover{
+    color: #c80226;
 }
 
 
@@ -56,5 +61,6 @@ body::-webkit-scrollbar{
 
 p.link-info{
     padding: 15px 0px 15px 0px;
+    font-size: .9em;
+    font-weight: 500;
 }
-
