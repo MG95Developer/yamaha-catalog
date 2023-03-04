@@ -1,7 +1,0 @@
-body{
-    overflow-y: scroll;  /* allow vertical scrolling */
-}
-
-body::-webkit-scrollbar{
-    display: none; /* remove browser scroll bar */
-}

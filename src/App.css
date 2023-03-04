@@ -1,0 +1,60 @@
+
+/* GENERAL */
+
+body{
+    overflow-y: scroll;  /* allow vertical scrolling */
+}
+
+body::-webkit-scrollbar{
+    display: none; /* remove browser scroll bar */
+}
+
+/* FOOTER ACCORDION COMPONENT (SMALL / MEDIUM SIZE SCREENS) */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.accordion{
+    width: 100%;
+
+}
+
+.item{
+    margin-bottom: 5px;
+    color: black;
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1em 0;
+}
+
+
+.content{
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.content.show{
+    height: auto;
+    max-height: 100%;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+
+p.link-info{
+    padding: 15px 0px 15px 0px;
+}
+

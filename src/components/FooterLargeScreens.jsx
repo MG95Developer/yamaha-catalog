@@ -1,10 +1,9 @@
-import { Box, Container, Grid, GridItem, Text, Image, HStack } from "@chakra-ui/react";
+import { Box, Container, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { ExternalLink } from "react-external-link";
 import { Link } from 'react-router-dom'
 
 export default function FooterLargeScreens()
 {
-
     const footerColTitles = {
         fontWeight: '800',
         color: 'white',
@@ -312,7 +311,7 @@ export default function FooterLargeScreens()
                                         <ExternalLink href="https://yamaha-motor.com/data-privacy-request-form" target="_blank">
                                             <Box display="flex" flexDirection="row">
                                                 <Text mr={2}>Your Privacy Choices </Text>
-                                                <Image src='/img/privacy-choice-icon.png' alt='privacy options icon' width="25px" heigth="auto" />
+                                                <Image src='/img/privacy-choice-icon.png' alt='privacy options icon' width="35px" heigth="auto" />
                                             </Box>
                                         </ExternalLink>
                                     </GridItem>
@@ -328,6 +327,7 @@ export default function FooterLargeScreens()
                     </Grid>
 
                 </Container>
-            </Box></>
+            </Box>
+        </>
     )
 }

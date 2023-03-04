@@ -1,6 +1,9 @@
-import { Box, Container, Grid, GridItem, Text, Image, HStack } from "@chakra-ui/react";
+import { Box, Container, Text, Image } from "@chakra-ui/react";
 import { ExternalLink } from "react-external-link";
 import { Link } from 'react-router-dom'
+import Accordion from "./Accordion";
+
+
 
 export default function FooterSmallScreens()
 {
@@ -8,10 +11,7 @@ export default function FooterSmallScreens()
     const footerLinks = {
         color: 'white',
         marginBottom: '15px',
-        fontSize: '13px',
-        _hover: {
-            color: 'yamaha.red'
-        }
+        fontSize: '13px'
     }
 
     return (
@@ -24,7 +24,9 @@ export default function FooterSmallScreens()
                     </Link>
                 </Box>
 
-                <Box minHeight="200px" color="white" border="2px solid yellow" mb="30px">Accordion goes here</Box>
+                <Box mb="30px">
+                    <Accordion />
+                </Box>
 
                 <Box sx={footerLinks}>
                     <ExternalLink href="#" target="_blank">
@@ -52,7 +54,6 @@ export default function FooterSmallScreens()
                 </Box>
 
             </Container>
-
         </>
     )
 }
