@@ -11,7 +11,8 @@
             "price": "26,999",
             "img": "./public/img/2023-YZF-R1M.png",
             "category": "SUPERSPORT",
-            "isNew": true
+            "isNew": true,
+            "inStock": true
         },
         {
             "id": 2,
@@ -24,7 +25,8 @@
             "price": "18,099",
             "img": "./public/img/2022-YZF-R1-60TH-ANNIVERSARY-EDITION.png",
             "category": "SUPERSPORT",
-            "isNew": false
+            "isNew": false,
+            "inStock": false
         },
         {
             "id": 3,
@@ -37,7 +39,8 @@
             "price": "9,999",
             "img": "./public/img/2023-YZF-R7.png",
             "category": "SUPERSPORT",
-            "isNew": true
+            "isNew": true,
+            "inStock": true
         }
     ]
 }

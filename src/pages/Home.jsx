@@ -108,7 +108,7 @@ export default function Home()
             <Box w="full">
               <Box display="flex" justifyContent={{ base: "center", lg: "flex-end" }}>
                 <Link to="/test-drive">
-                  <Button sx={buttonStyles}>Schedule a Test Drive</Button>
+                  {vehicle.inStock && vehicle.inStock == true ? <Button sx={buttonStyles}>Schedule a Test Drive</Button> : <></>}
                 </Link>
               </Box>
             </Box>
