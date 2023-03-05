@@ -7,6 +7,7 @@ export default function Navbar()
 
     const navLinks = {
         textTransform: 'uppercase',
+        fontSize: '.85em',
         fontWeight: '600',
         borderBottom: '2px solid',
         borderColor: 'transparent',

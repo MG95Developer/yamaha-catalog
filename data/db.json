@@ -10,7 +10,8 @@
             "description": "Lastest R1M model",
             "price": "26,999",
             "img": "./public/img/2023-YZF-R1M.png",
-            "category": "SUPERSPORT"
+            "category": "SUPERSPORT",
+            "isNew": true
         },
         {
             "id": 2,
@@ -22,7 +23,8 @@
             "description": "World GP 60th Anniversary Edition",
             "price": "18,099",
             "img": "./public/img/2022-YZF-R1-60TH-ANNIVERSARY-EDITION.png",
-            "category": "SUPERSPORT"
+            "category": "SUPERSPORT",
+            "isNew": false
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@
             "description": "Lastest R7 model",
             "price": "9,999",
             "img": "./public/img/2023-YZF-R7.png",
-            "category": "SUPERSPORT"
+            "category": "SUPERSPORT",
+            "isNew": true
         }
     ]
 }

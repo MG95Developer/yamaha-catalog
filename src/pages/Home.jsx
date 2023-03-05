@@ -53,8 +53,18 @@ export default function Home()
     <SimpleGrid spacing={10} minChildWidth={330}>
       {motorcycles && motorcycles.map( vehicle => (
         <Card key={vehicle.id}>
+          <Box position="relative">
+            <Text position="absolute" top="0" right="0">
+              {vehicle.isNew && vehicle.isNew ?
+                <Box bg="yamaha.red" borderBottomLeftRadius="95%" borderBottomRightRadius="95%">
+                  <Text p={3} textTransform="uppercase" color="white" fontWeight="800">new</Text>
+                </Box>
+                : <></>}
+            </Text>
+          </Box>
           <CardHeader>
             <Text my={2} color="yamaha.lightGrey" fontWeight="500" opacity=".5">{vehicle.category}</Text>
+
             <HStack>
               <Heading as="h2" fontSize={{ base: "28px", md: "23px", lg: "25px" }}>{vehicle.title}</Heading>
               <Spacer />
