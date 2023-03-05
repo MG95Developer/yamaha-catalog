@@ -72,17 +72,17 @@
         },
         {
             "id": 6,
-            "title": "",
-            "model": "",
-            "engine": "",
-            "colors": "",
-            "year": "",
-            "description": "",
-            "price": "",
-            "img": "",
+            "title": "Yamaha YZ",
+            "model": "YZ250",
+            "engine": "250cc",
+            "colors": "Blue",
+            "year": "2023",
+            "description": "Pure performance and full‑throttle adrenaline is what you get from this lightweight and reliable two‑stroke moto machine, with the look of a full factory Monster Energy® ride.",
+            "price": "8,099",
+            "img": "./public/img/yamaha-yz250.png",
             "category": "MOTOCROSS",
             "isNew": false,
-            "inStock": false
+            "inStock": true
         }
     ]
 }

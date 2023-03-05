@@ -5,7 +5,7 @@
 // 1 - useLoaderData
 import { useLoaderData } from "react-router-dom"
 
-import { EditIcon, ViewIcon } from "@chakra-ui/icons"
+import { ViewIcon } from "@chakra-ui/icons"
 import
 {
   Box,
@@ -20,12 +20,7 @@ import
   Divider,
   Button,
   Image,
-  Spacer,
-  Stack,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
+  Spacer
 } from "@chakra-ui/react"
 
 
