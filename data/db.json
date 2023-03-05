@@ -83,6 +83,48 @@
             "category": "MOTOCROSS",
             "isNew": false,
             "inStock": true
+        },
+        {
+            "id": 7,
+            "title": "Yamaha MT",
+            "model": "MT-07",
+            "engine": "689cc",
+            "colors": "Black & Aqua Green",
+            "year": "2023",
+            "description": "Featuring a distinctive next generation look and features, as well as an advanced twin‑cylinder engine. Experience the best balance of performance and value the Dark Side has to offer.",
+            "price": "8,199",
+            "img": "./public/img/2023-YAMAHA-MT07.png",
+            "category": "HYPER NAKED",
+            "isNew": true,
+            "inStock": true
+        },
+        {
+            "id": 8,
+            "title": "Yamaha MT",
+            "model": "MT-09 SP",
+            "engine": "890cc",
+            "colors": "Black, Gray & Blue",
+            "year": "2023",
+            "description": "Featuring exclusive, special edition coloring, premium KYB® and Öhlins® suspension and a cruise control system, experience the class‑dominating middleweight masterpiece born from the Darkness.",
+            "price": "11,499",
+            "img": "./public/img/2023-yamaha-mt-09.png",
+            "category": "HYPER NAKED",
+            "isNew": false,
+            "inStock": false
+        },
+        {
+            "id": 9,
+            "title": "Yamaha MT",
+            "model": "MT-10 SP",
+            "engine": "998cc",
+            "colors": "",
+            "year": "2023",
+            "description": "The highest specification Master of Torque is here. Once you experience the MT‑10 SP's total performance, you'll know you've truly entered the Dark Side.",
+            "price": "17,199",
+            "img": "./public/img/2023-yamaha-mt10-sp.png",
+            "category": "HYPER NAKED",
+            "isNew": false,
+            "inStock": true
         }
     ]
 }
