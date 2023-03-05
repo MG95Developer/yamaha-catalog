@@ -51,7 +51,7 @@ export default function Home()
   }
 
   return (
-    <SimpleGrid spacing={10} minChildWidth={330}>
+    <SimpleGrid spacing={10} minChildWidth={300}>
       {motorcycles && motorcycles.map( vehicle => (
         <Card key={vehicle.id}>
           <Box position="relative">
@@ -104,7 +104,6 @@ export default function Home()
             </Box>
             <Divider pt={6} />
           </CardBody>
-
 
           <CardFooter display="flex" justifyContent="center" alignItems="center">
             <Box w="full">

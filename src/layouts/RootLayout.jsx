@@ -50,13 +50,10 @@ export default function RootLayout()
             bg="yamaha.lightGrey"
             color="#fff"
             colSpan={{ base: 12, md: 4, lg: 4, xl: 2 }}
-            minHeight={{ base: '120px' }}
             p={{ base: '10px' }}
           >
 
-            <Box height="100%" display="flex" justifyContent="center" alignItems="center">
-              <Navbar />
-            </Box>
+            <Navbar />
 
           </GridItem>
 
