@@ -8,7 +8,7 @@ import
 
 // layouts and pages
 import RootLayout from './layouts/RootLayout'
-import Home from './pages/Home'
+import Home, { motorcyclesLoader } from './pages/Home'
 import Contact from './pages/Contact'
 import TestDrive from './pages/TestDrive';
 import Profile from './pages/Profile'
@@ -18,7 +18,7 @@ import Profile from './pages/Profile'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
+      <Route index element={<Home />} loader={motorcyclesLoader} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/test-drive" element={<TestDrive />} />
       <Route path="/profile" element={<Profile />} />

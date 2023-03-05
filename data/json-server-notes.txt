@@ -1,0 +1,6 @@
+1 - You need JSON SERVER installed in your machine.
+
+2 - Run JSON SERVER (json-server -w ./data/db.json)
+
+2.1 - Get your endpoint to fetch the data from JSON file:
+http://localhost:3000/motorcycles

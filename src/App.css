@@ -9,6 +9,9 @@ body::-webkit-scrollbar{
     display: none; /* remove browser scroll bar */
 }
 
+
+/*********************************************************/
+
 /* FOOTER ACCORDION COMPONENT (SMALL / MEDIUM SIZE SCREENS) */
 .wrapper{
     display: flex;
@@ -20,12 +23,12 @@ body::-webkit-scrollbar{
 
 .accordion{
     width: 100%;
-
 }
 
 .item{
     margin-bottom: 5px;
     color: black;
+    cursor: pointer;
 }
 
 .title{
