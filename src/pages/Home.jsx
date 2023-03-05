@@ -20,8 +20,14 @@ import
   Divider,
   Button,
   Image,
-  Spacer
+  Spacer,
+  Stack,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
 } from "@chakra-ui/react"
+
 
 import { ExternalLink } from "react-external-link";
 import { Link } from 'react-router-dom'
@@ -88,11 +94,12 @@ export default function Home()
                 {vehicle.year == "2023" ? <Text color="yamaha.red">{vehicle.year} Model</Text> : <Text color="yamaha.darkGrey">{vehicle.year} Model</Text>}
               </Text>
             </Box>
-            <Box>
+
+            <Box mt={5} height="170px" display="flex" justifyContent="center" alignItems="start">
               <Text>{vehicle.description}</Text>
             </Box>
 
-            <Box mt={4}>
+            <Box mt={2}>
               <ExternalLink href="https://www.yamaha-motor-finance.com/" target="_blank">
                 <HStack sx={financialServices}>
                   <Text>Yamaha Finacial Services</Text>

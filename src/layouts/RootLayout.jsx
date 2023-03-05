@@ -1,5 +1,6 @@
 import { Container, Grid, GridItem, Box, HStack, Spacer } from "@chakra-ui/react"
 import { Outlet } from "react-router-dom"
+import Alert from "../components/AlertUser"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Section from "../components/Section"
@@ -12,6 +13,10 @@ export default function RootLayout()
   return (
     <>
       <Container maxWidth="1920px" p="0">
+
+
+        <Alert />
+
         <Grid templateColumns="repeat(12, 1fr)">
 
           <GridItem
