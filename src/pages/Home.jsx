@@ -56,7 +56,7 @@ export default function Home()
           <Box position="relative">
             <Text position="absolute" top="0" right="0">
               {vehicle.isNew && vehicle.isNew ?
-                <Box bg="yamaha.red" borderBottomLeftRadius="95%" borderBottomRightRadius="95%">
+                <Box bg="yamaha.red" borderBottomLeftRadius="250px" borderBottomRightRadius="250px">
                   <Text p={3} textTransform="uppercase" color="white" fontWeight="800">new</Text>
                 </Box>
                 : <></>}
@@ -84,7 +84,9 @@ export default function Home()
             </HStack>
             <Box py={2}>
               <Text fontWeight="500" fontSize="1em" >Colors: {vehicle.colors}</Text>
-              <Text fontWeight="500" py={2}>{vehicle.year} Model</Text>
+              <Text fontWeight="500" py={2}>
+                {vehicle.year == "2023" ? <Text color="yamaha.red">{vehicle.year} Model</Text> : <Text color="yamaha.darkGrey">{vehicle.year} Model</Text>}
+              </Text>
             </Box>
             <Box>
               <Text>{vehicle.description}</Text>
