@@ -58,13 +58,9 @@ export default function RootLayout()
           <GridItem
             as="main"
             colSpan={{ base: 12, md: 8, lg: 8, xl: 10 }}
-            minHeight={{ base: '100vh' }}
             p={{ base: '10px' }}
           >
-
-            <Box border="3px solid red" height="100%">
-              <Outlet />
-            </Box>
+            <Outlet />
 
           </GridItem>
 

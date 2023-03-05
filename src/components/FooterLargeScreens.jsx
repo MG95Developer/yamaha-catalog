@@ -322,7 +322,7 @@ export default function FooterLargeScreens()
                         </GridItem>
 
                         <GridItem display="flex" justifyContent="flex-end">
-                            <Text>© 2023 Tribute website to Yamaha Motor Corporation, USA. No rights reserved.</Text>
+                            <Text>2023 Tribute website to Yamaha Motor Corporation, USA. No rights reserved.</Text>
                         </GridItem>
                     </Grid>
 

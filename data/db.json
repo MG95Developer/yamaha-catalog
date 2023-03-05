@@ -5,36 +5,36 @@
             "title": "Yamaha R1M",
             "model": "YZF-R1M",
             "engine": "998cc",
-            "colors": "black and blue",
+            "colors": "Black and Dark Blue",
             "year": "2023",
-            "description": "lastest R1M model",
-            "price": "$26,999",
+            "description": "Lastest R1M model",
+            "price": "26,999",
             "img": "./public/img/2023-YZF-R1M.png",
-            "category": "YAMAHA SUPERSPORT"
+            "category": "SUPERSPORT"
         },
         {
             "id": 2,
             "title": "Yamaha R1",
             "model": "YZF-R1",
             "engine": "998cc",
-            "colors": "white and red",
+            "colors": "White and Red",
             "year": "2022",
-            "description": "WORLD GP 60TH ANNIVERSARY EDITION",
-            "price": "$18,099",
+            "description": "World GP 60th Anniversary Edition",
+            "price": "18,099",
             "img": "./public/img/2022-YZF-R1-60TH-ANNIVERSARY-EDITION.png",
-            "category": "YAMAHA SUPERSPORT"
+            "category": "SUPERSPORT"
         },
         {
             "id": 3,
             "title": "Yamaha R7",
             "model": "YZF-R7",
             "engine": "689cc",
-            "colors": "black and blue",
+            "colors": "Black and Blue",
             "year": "2023",
-            "description": "lastest R7 model",
-            "price": "$9,999",
+            "description": "Lastest R7 model",
+            "price": "9,999",
             "img": "./public/img/2023-YZF-R7.png",
-            "category": "YAMAHA SUPERSPORT"
+            "category": "SUPERSPORT"
         }
     ]
 }

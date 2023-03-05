@@ -26,7 +26,7 @@ export default function Navbar()
                 >
                     <NavLink to="/" >
                         <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '1em', lg: '1.2em' }} sx={navLinks}>
-                            Products
+                            Motorcycles
                         </ListItem>
                     </NavLink>
 

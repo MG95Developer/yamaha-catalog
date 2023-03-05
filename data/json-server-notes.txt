@@ -1,6 +1,10 @@
-1 - You need JSON SERVER installed in your machine.
+1 - YOU NEED JSON SERVER installed in your machine (npm i -g json-server) OR IT WILL NOT WORK...
 
 2 - Run JSON SERVER (json-server -w ./data/db.json)
 
 2.1 - Get your endpoint to fetch the data from JSON file:
 http://localhost:3000/motorcycles
+
+SEE more details & instructions:
+    Home.jsx
+    App.jsx
