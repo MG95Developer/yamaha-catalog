@@ -1,6 +1,8 @@
+import { Box } from '@chakra-ui/react'
+
 export default function Contact()
 {
     return (
-        <div>Email us</div>
+        <Box>Email us</Box>
     )
 }

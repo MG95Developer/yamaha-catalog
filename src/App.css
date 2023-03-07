@@ -14,10 +14,6 @@ body::-webkit-scrollbar{
 
 /* FOOTER ACCORDION COMPONENT (SMALL / MEDIUM SIZE SCREENS) */
 
-
-
-
-
 .content.show{
     height: auto;
     max-height: 100%;

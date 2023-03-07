@@ -3,8 +3,6 @@ import { ExternalLink } from "react-external-link";
 import { Link } from 'react-router-dom'
 import Accordion from "./Accordion";
 
-
-
 export default function FooterSmallScreens()
 {
 

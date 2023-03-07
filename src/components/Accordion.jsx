@@ -2,19 +2,17 @@ import { useState } from "react"
 import { Box, Text, Heading } from '@chakra-ui/react'
 import { ExternalLink } from "react-external-link"
 
-
 function Accordion()
 {
-
     const [selected, setSelected] = useState( null )
 
-    const toggle = ( i ) =>
+    const toggle = ( accordionIndex ) =>
     {
-        if ( selected === i )
+        if ( selected === accordionIndex )
         {
             return setSelected( null )
         }
-        setSelected( i )
+        setSelected( accordionIndex )
     }
 
     const titleStyles = {
@@ -42,18 +40,18 @@ function Accordion()
         <Box display="flex" justifyContent="center" alignItems="center" w="full" h="auto">
 
             <Box w="100%">
-                {footerLinks.map( ( e, i ) =>
+                {footerLinks.map( ( item, accordionIndex ) =>
                 (
-                    <Box marginBottom="5px" color="black" cursor="pointer" key={e.id}>
+                    <Box marginBottom="5px" color="black" cursor="pointer" key={item.id}>
 
-                        <Box sx={titleStyles} onClick={() => toggle( i )}>
-                            <Heading as="h2" fontSize={15}>{e.title}</Heading>
-                            <Text as="span">{selected === i ? '-' : '+'}</Text>
+                        <Box sx={titleStyles} onClick={() => toggle( accordionIndex )}>
+                            <Heading as="h2" fontSize={15}>{item.title}</Heading>
+                            <Text as="span">{selected === accordionIndex ? '-' : '+'}</Text>
                         </Box>
 
-                        <Box sx={contentStyles} className={selected === i ? 'content show' : ''}>
+                        <Box sx={contentStyles} className={selected === accordionIndex ? 'content show' : ''}>
                             {
-                                e.url.map( ( item, index ) =>
+                                item.url.map( ( item, index ) =>
                                 {
                                     return (
                                         <Box key={index.id}>

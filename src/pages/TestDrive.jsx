@@ -1,6 +1,8 @@
+import { Box } from '@chakra-ui/react'
+
 export default function TestDrive()
 {
     return (
-        <div>Test Drive if a model is in stock</div>
+        <Box>Test Drive if a model is in stock</Box>
     )
 }
