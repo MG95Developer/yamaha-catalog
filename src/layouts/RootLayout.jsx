@@ -13,12 +13,9 @@ export default function RootLayout()
   return (
     <>
       <Container maxWidth="1920px" p="0">
-
-
         <Alert />
 
         <Grid templateColumns="repeat(12, 1fr)">
-
           <GridItem
             as="section"
             colSpan={{ base: 12 }}
@@ -72,12 +69,9 @@ export default function RootLayout()
             colSpan={{ base: 12 }}
           >
 
-            <Box>
-              <Footer />
-            </Box>
+            <Footer />
 
           </GridItem>
-
         </Grid>
       </Container>
 

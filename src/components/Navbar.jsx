@@ -24,6 +24,7 @@ export default function Navbar()
                 <List display='flex'
                     flexDirection={{ base: 'row', md: 'column' }}
                     justifyContent={{ base: 'center', md: 'flex-start' }}
+                    marginTop={{ base: '0px', md: '60px' }}
                 >
                     <NavLink to="/" >
                         <ListItem mr={{ base: '15px', md: '0px' }} mb={{ base: '0px', md: '25px' }} fontSize={{ base: '.8em', md: '1.6em', lg: '1.5em' }} sx={navLinks}>

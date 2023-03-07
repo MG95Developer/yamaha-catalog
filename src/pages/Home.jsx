@@ -36,6 +36,7 @@ export default function Home()
     color: "white",
     backgroundColor: "yamaha.red",
     transitionDelay: ".3s",
+    marginBottom: "20px",
     _hover: {
       backgroundColor: "yamaha.lightGrey",
       color: "white"
@@ -52,12 +53,13 @@ export default function Home()
 
   return (
     <SimpleGrid spacing={10} minChildWidth={300}>
+
       {motorcycles && motorcycles.map( vehicle => (
-        <Card key={vehicle.id}>
+        <Card key={vehicle.id} borderTop="2px solid #c80226">
           <Box position="relative">
             <Text position="absolute" top="0" right="0">
               {vehicle.isNew && vehicle.isNew ?
-                <Box bg="yamaha.red" borderBottomLeftRadius="250px" borderBottomRightRadius="250px">
+                <Box bg="yamaha.red" borderBottomLeftRadius="250px" borderBottomRightRadius="250px" mt={1} mr={1}>
                   <Text p={3} textTransform="uppercase" color="white" fontWeight="800">new</Text>
                 </Box>
                 : <></>}
@@ -78,10 +80,10 @@ export default function Home()
           </CardHeader>
 
           <CardBody>
-            <HStack py={1} mb={4}>
+            <HStack py={1}>
               <Text fontWeight="500" fontSize="1.1em">Engine: {vehicle.engine}</Text>
               <Spacer />
-              <Text color="yamaha.red" fontWeight="600">$ {vehicle.price}</Text>
+              <Text color="#039" fontWeight="700">$ {vehicle.price}</Text>
             </HStack>
             <Box py={2}>
               <Text fontWeight="500" fontSize="1em" >Colors: {vehicle.colors}</Text>
@@ -96,25 +98,29 @@ export default function Home()
 
             <Box mt={2}>
               <ExternalLink href="https://www.yamaha-motor-finance.com/" target="_blank">
-                <HStack sx={financialServices}>
-                  <Text>Yamaha Finacial Services</Text>
-                  <ViewIcon />
-                </HStack>
+                <Box w="full" display="flex" justifyContent={{ base: "center", lg: "flex-end" }}>
+                  <HStack sx={financialServices}>
+                    <Text>Yamaha Finacial Services</Text>
+                    <ViewIcon />
+                  </HStack>
+                </Box>
+
               </ExternalLink>
             </Box>
-            <Divider pt={6} />
+
+
+
           </CardBody>
 
-          <CardFooter display="flex" justifyContent="center" alignItems="center">
-            <Box w="full">
-              <Box display="flex" justifyContent={{ base: "center", lg: "flex-end" }}>
-                <Link to="/test-drive">
-                  {vehicle.inStock && vehicle.inStock == true ? <Button sx={buttonStyles}>Schedule a Test Drive</Button> : <></>}
-                </Link>
-              </Box>
+          <CardFooter py="0">
+            <Box w="full" display="flex" justifyContent={{ base: "center", lg: "flex-end" }}>
+              <Link to="/test-drive">
+                {vehicle.inStock && vehicle.inStock == true ? <Button sx={buttonStyles}>Schedule a Test Drive</Button> : <></>}
+              </Link>
             </Box>
+
           </CardFooter>
-        </Card>
+        </Card >
       ) )
       }
     </SimpleGrid >

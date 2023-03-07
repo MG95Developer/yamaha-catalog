@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import { Box, Text, Heading } from '@chakra-ui/react'
+import { ExternalLink } from "react-external-link"
 
 
 function Accordion()
@@ -16,38 +17,61 @@ function Accordion()
         setSelected( i )
     }
 
+    const titleStyles = {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        color: "white",
+        fontWeight: "bold",
+        cursor: "pointer",
+        borderTop: "1px solid rgba( 255, 255, 255, 0.2 )",
+        textTransform: "uppercase",
+        _hover: {
+            color: "#c80226"
+        }
+    }
+
+    const contentStyles = {
+        color: "white",
+        maxHeight: 0,
+        overflow: "hidden",
+        transition: "all 0.5s cubic - bezier( 0, 1, 0, 1 )"
+    }
+
     return (
-        <div className="wrapper">
-            <div className="accordion">
+        <Box display="flex" justifyContent="center" alignItems="center" w="full" h="auto">
+
+            <Box w="100%">
                 {footerLinks.map( ( e, i ) =>
                 (
-                    <div className="item">
+                    <Box marginBottom="5px" color="black" cursor="pointer" key={e.id}>
 
-                        <div className="title" onClick={() => toggle( i )}>
-                            <h2>{e.title}</h2>
-                            <span>{selected === i ? '-' : '+'}</span>
-                        </div>
+                        <Box sx={titleStyles} onClick={() => toggle( i )}>
+                            <Heading as="h2" fontSize={15}>{e.title}</Heading>
+                            <Text as="span">{selected === i ? '-' : '+'}</Text>
+                        </Box>
 
-                        <div className={selected === i ? 'content show' : 'content'} id="content">
+                        <Box sx={contentStyles} className={selected === i ? 'content show' : ''}>
                             {
-                                e.url.map( item =>
+                                e.url.map( ( item, index ) =>
                                 {
                                     return (
-                                        <div>
-                                            <p class="link-info">
-                                                <a href={item.link} target="_blank">{item.question}</a>
-                                            </p>
-                                        </div>
+                                        <Box key={index.id}>
+                                            <Text as="p" padding="15px 0px 15px 0px" fontSize=".9em" fontWeight="500">
+                                                <ExternalLink href={item.link} target="_blank">
+                                                    {item.question}
+                                                </ExternalLink>
+                                            </Text>
+                                        </Box>
                                     )
                                 } )
                             }
-                        </div>
-
-                    </div>
+                        </Box>
+                    </Box>
                 )
                 )}
-            </div>
-        </div >
+            </Box>
+        </Box >
     )
 }
 

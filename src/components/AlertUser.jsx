@@ -4,12 +4,13 @@ import
     AlertDescription,
     Text,
     HStack,
+    Box
 } from '@chakra-ui/react'
 
 export default function AlertUser()
 {
     return (
-        <>
+        <Box>
             <Alert bg="#039" color="white" py={{ base: "20px", lg: "0px" }}>
                 <AlertDescription height="50px" display="flex" justifyContent="center" alignItems="center">
                     <HStack>
@@ -17,6 +18,6 @@ export default function AlertUser()
                     </HStack>
                 </AlertDescription>
             </Alert>
-        </>
+        </Box>
     )
 }
